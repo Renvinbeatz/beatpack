@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 BEAT PACK - PROD. RENVIN</title>
+    <style>
+        /* ==========================================================================
+           1. ESTILOS BASE & RESET
+           ========================================================================== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            background-color: #06030a;
+        }
+
+        body {
+            background-color: #06030a;
+            color: #ffffff;
+            line-height: 1.5;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 450px;
+            margin: 0 auto;
+            background: linear-gradient(180deg, #090412 0%, #06030a 100%);
+            padding-bottom: 80px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.8);
+            position: relative;
+            min-height: 100vh;
+            display: block;
+        }
+
+        /* ==========================================================================
+           2. #1 APRESENTAÇÃO (HERO & VÍDEO)
+           ========================================================================== */
+        .hero {
+            text-align: center;
+            padding: 40px 20px 25px;
+            background: radial-gradient(circle at top, rgba(138, 43, 226, 0.15) 0%, transparent 70%);
+        }
+
+        .subtitle-top {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #a197b4;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .main-title {
+            font-size: 38px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            line-height: 1.1;
+            margin-bottom: 15px;
+            background: linear-gradient(180deg, #ffffff 0%, #dedede 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .royalty-badge {
+            font-size: 15px;
+            font-weight: 700;
+            color: #9d4edd;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-description {
+            font-size: 13px;
+            color: #7e7492;
+            padding: 0 15px;
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            margin: 0 20px 25px;
+            border-radius: 16px;
+            overflow: hidden;
+            background: #000000;
+            border: 1px solid rgba(157, 78, 221, 0.2);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+            position: relative;
+            aspect-ratio: 16 / 9;
+        }
+
+        .video-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        .availability-text {
+            font-size: 14px;
+            color: #a197b4;
+            margin: 20px 0 15px;
+            text-align: center;
+        }
+
+        .availability-text strong {
+            color: #9d4edd;
+            font-weight: 700;
+        }
+
+        .hero-buttons-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 0 40px;
+            margin-bottom: 30px;
+        }
+
+        .btn-hero-solid {
+            background: #8a2be2;
+            color: #ffffff;
+            border: none;
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
+            transition: background 0.2s;
+        }
+
+        .btn-hero-solid:active {
+            background: #7522c4;
+        }
+
+        .btn-hero-outline {
+            background: transparent;
+            color: #8a2be2;
+            border: 1px solid rgba(138, 43, 226, 0.4);
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: background 0.2s;
+        }
+
+        .btn-hero-outline:active {
+            background: rgba(138, 43, 226, 0.08);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 25px;
+            padding: 0 20px;
+            line-height: 1.2;
+        }
+
+        .section-subtitle-small {
+            text-align: center;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #9d4edd;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        /* ==========================================================================
+           3. #2 DEPOIMENTOS
+           ========================================================================== */
+        .testimonials-section {
+            padding: 40px 0 20px;
+            background: radial-gradient(circle at center, rgba(138, 43, 226, 0.08) 0%, transparent 80%);
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            padding: 0 20px;
+        }
+
+        .screenshot-slot {
+            background: rgba(22, 15, 38, 0.8);
+            border: 1px solid rgba(138, 43, 226, 0.2);
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 4 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .screenshot-slot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .screenshot-slot img[src=""], .screenshot-slot img:not([src]) {
+            display: none;
+        }
+
+        .img-placeholder {
+            font-size: 11px;
+            color: #8a2be2;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            opacity: 0.7;
+        }
+
+        /* ==========================================================================
+           4. #3 PRÉVIAS (GRID 3x3)
+           ========================================================================== */
+        .preview-section {
+            padding: 40px 0 20px;
+        }
+
+        .track-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 0 20px;
+        }
+
+        .track-card {
+            background: rgba(18, 12, 30, 0.8);
+            border: 1px solid rgba(138, 43, 226, 0.15);
+            border-radius: 14px;
+            padding: 12px 8px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 115px;
+        }
+
+        .track-card.active-track {
+            border-color: #9d4edd;
+            background: rgba(138, 43, 226, 0.05);
+        }
+
+        .track-play-btn {
+            width: 32px;
+            height: 32px;
+            background: rgba(138, 43, 226, 0.2);
+            border: 1px solid rgba(138, 43, 226, 0.4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin-bottom: 8px;
+        }
+
+        .track-play-btn svg {
+            width: 10px;
+            height: 10px;
+            fill: #9d4edd;
+            margin-left: 1px;
+        }
+
+        .track-card h4 {
+            font-size: 11px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 6px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+        }
+
+        .bpm-tag {
+            font-size: 9px;
+            background: rgba(157, 78, 221, 0.15);
+            color: #c8b6ff;
+            padding: 2px 6px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .waveform-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+            height: 12px;
+            margin-bottom: 6px;
+            visibility: hidden;
+        }
+
+        .track-card.active-track .waveform-placeholder {
+            visibility: visible;
+        }
+
+        .waveform-placeholder span {
+            display: inline-block;
+            width: 2px;
+            background: #9d4edd;
+            border-radius: 1px;
+            height: 10px;
+        }
+
+        .track-card.active-track .waveform-placeholder span {
+            animation: bounce 0.6s ease-in-out infinite alternate;
+        }
+
+        .waveform-placeholder span:nth-child(1) { height: 6px; animation-delay: 0.1s; }
+        .waveform-placeholder span:nth-child(2) { height: 12px; animation-delay: 0.3s; }
+        .waveform-placeholder span:nth-child(3) { height: 8px; animation-delay: 0.2s; }
+        .waveform-placeholder span:nth-child(4) { height: 10px; animation-delay: 0.4s; }
+        .waveform-placeholder span:nth-child(5) { height: 5px; animation-delay: 0.1s; }
+
+        @keyframes bounce {
+            100% { transform: scaleY(1.6); }
+        }
+
+        .preview-note {
+            font-size: 11px;
+            color: #6c637a;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        /* ==========================================================================
+           5. #4 CARD DE OFERTA
+           ========================================================================== */
+        .pricing-card {
+            background: #0e081b;
+            border: 2px solid #5a189a;
+            border-radius: 24px;
+            margin: 40px 20px 25px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(138, 43, 226, 0.3);
+        }
+
+        .offer-badge {
+            background: #e63946;
+            color: white;
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 6px 16px;
+            border-radius: 20px;
+            display: inline-block;
+            letter-spacing: 1px;
+            margin-bottom: 22px;
+        }
+
+        .progress-container {
+            margin: 0 auto 25px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .progress-labels {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .progress-text-left {
+            color: #a197b4;
+        }
+
+        .progress-text-right {
+            color: #ff4757;
+        }
+
+        .progress-bar-bg {
+            width: 100%;
+            height: 10px;
+            background: #221936;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            width: 87%;
+            background: linear-gradient(90deg, #00b4d8 0%, #00f5d4 100%);
+            border-radius: 20px;
+        }
+
+        .old-price {
+            font-size: 14px;
+            color: #6c637a;
+            text-decoration: line-through;
+            margin-bottom: 2px;
+        }
+
+        .price-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+
+        .price-label-left {
+            font-size: 14px;
+            color: #a197b4;
+            line-height: 1.2;
+            text-align: right;
+            width: 50px;
+        }
+
+        .main-price {
+            font-size: 52px;
+            font-weight: 900;
+            color: #af47ff;
+            text-shadow: 0 0 20px rgba(175, 71, 255, 0.6);
+            line-height: 1;
+        }
+
+        .price-details {
+            font-size: 11px;
+            color: #7e7492;
+            margin-bottom: 25px;
+        }
+
+        .pack-cover-wrapper {
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 25px;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #19122b;
+            border: 1px dashed rgba(138, 43, 226, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .pack-cover-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .pack-cover-wrapper img[src=""], .pack-cover-wrapper img:not([src]) {
+            display: none;
+        }
+
+        .cover-placeholder {
+            font-size: 11px;
+            color: #a363ff;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 10px;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        .pricing-features {
+            text-align: left;
+            margin-bottom: 25px;
+            padding: 0 10px;
+        }
+
+        .p-feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 13px;
+            color: #ffffff;
+            margin-bottom: 12px;
+        }
+
+        .p-feature-icon {
+            width: 16px;
+            height: 16px;
+            fill: #8a2be2;
+            flex-shrink: 0;
+        }
+
+        .btn-large-cta {
+            background: #8a2be2;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 18px;
+            border-radius: 14px;
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .btn-large-cta:active {
+            background: #7522c4;
+        }
+
+        .pricing-action-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .btn-secondary-action {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            color: #a363ff;
+            padding: 10px;
+            font-size: 11px;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 8px;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+
+        .instant-delivery-text {
+            font-size: 11px;
+            color: #7e7492;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        /* ==========================================================================
+           6. #5 O QUE ESTÁ INCLUSO? & GARANTIA
+           ========================================================================== */
+        .included-section {
+            padding: 40px 0 20px;
+        }
+
+        .feature-item {
+            background: #0f0b18;
+            border: 1px solid rgba(255, 255, 255, 0.02);
+            border-radius: 14px;
+            padding: 16px;
+            margin: 0 20px 12px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .feature-icon-wrapper {
+            width: 36px;
+            height: 36px;
+            background: rgba(138, 43, 226, 0.15);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .feature-icon-wrapper svg {
+            width: 18px;
+            height: 18px;
+            fill: #9d4edd;
+        }
+
+        .feature-text-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .check-icon {
+            width: 14px;
+            height: 14px;
+            fill: #9d4edd;
+            opacity: 0.8;
+            flex-shrink: 0;
+        }
+
+        .feature-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #e2defa;
+        }
+
+        .warranty-box {
+            text-align: center;
+            padding: 35px 30px;
+            margin: 25px 20px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .warranty-badge-icon {
+            width: 76px;
+            height: 76px;
+            background: rgba(138, 43, 226, 0.05);
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            box-shadow: 0 0 15px rgba(138, 43, 226, 0.15);
+        }
+
+        .warranty-badge-icon svg {
+            width: 32px;
+            height: 32px;
+            fill: #8a2be2;
+        }
+
+        .warranty-title {
+            font-size: 30px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        .warranty-text {
+            font-size: 15px;
+            color: #a197b4;
+            line-height: 1.6;
+            max-width: 340px;
+            opacity: 0.9;
+        }
+
+        /* ==========================================================================
+           7. #6 FAQ ACCORDION
+           ========================================================================== */
+        .faq-section {
+            padding: 40px 0;
+        }
+
+        .faq-list {
+            padding: 0 20px;
+        }
+
+        .faq-item {
+            background: rgba(14, 9, 23, 0.6);
+            border-radius: 10px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.01);
+        }
+
+        .faq-trigger {
+            width: 100%;
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: transparent;
+            border: none;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 600;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .faq-icon {
+            width: 12px;
+            height: 12px;
+            fill: #7e7492;
+            transition: transform 0.2s;
+        }
+
+        .faq-item.open .faq-icon {
+            transform: rotate(180deg);
+            fill: #9d4edd;
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background: rgba(8, 4, 15, 0.4);
+        }
+
+        .faq-inner-text {
+            padding: 0 16px 16px;
+            font-size: 12px;
+            color: #a197b4;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- #1 APRESENTAÇÃO -->
+        <header class="hero">
+            <p class="subtitle-top">PROD. RENVIN</p>
+            <h1 class="main-title">30 BEAT PACK</h1>
+            <p class="royalty-badge">100% livre de royalties</p>
+            <p class="hero-description">Pack profissional pronto para uso. Trap, Boombap, Hard, Sampled, R&B e muito mais!</p>
+        </header>
+
+        <div class="video-wrapper">
+            <iframe 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="Apresentação Oficial do Pack" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <p class="availability-text"><strong>Uso liberado</strong> para Spotify, YouTube e redes sociais...</p>
+
+        <div class="hero-buttons-group">
+            <a href="#previews" class="btn-hero-solid">Ouvir Beats</a>
+            <a href="#pricing" class="btn-hero-outline">Comprar Agora</a>
+        </div>
+
+
+        <!-- #2 DEPOIMENTOS -->
+        <section id="testimonials" class="testimonials-section">
+            <p class="section-subtitle-small">DEPOIMENTOS</p>
+            <h2 class="section-title">Quem já comprou aprova</h2>
+
+            <div class="image-grid">
+                <div class="screenshot-slot">
+                    <img src="print1.jpg" alt="Feedback 1" onclick="this.style.display='none'">
+                    <span class="img-placeholder">PRINT 1</span>
+                </div>
+                <div class="screenshot-slot">
+                    <img src="print2.jpg" alt="Feedback 2" onclick="this.style.display='none'">
+                    <span class="img-placeholder">PRINT 2</span>
+                </div>
+                <div class="screenshot-slot">
+                    <div class="img-placeholder">PRINT 3</div>
+                </div>
+                <div class="screenshot-slot">
+                    <div class="img-placeholder">PRINT 4</div>
+                </div>
+                <div class="screenshot-slot">
+                    <div class="img-placeholder">PRINT 5</div>
+                </div>
+                <div class="screenshot-slot">
+                    <div class="img-placeholder">PRINT 6</div>
+                </div>
+                <div class="screenshot-slot">
+                    <div class="img-placeholder">PRINT 7</div>
+                </div>
+                <div class="screenshot-slot">
+                    <div class="img-placeholder">PRINT 8</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- #3 PRÉVIAS (GRID 3x3) -->
+        <section id="previews" class="preview-section">
+            <p class="section-subtitle-small">PRÉVIA DO PACK</p>
+            <h2 class="section-title">Escute algumas faixas</h2>
+
+            <div class="track-grid">
+                <div class="track-card" id="track-1">
+                    <div class="track-play-btn" onclick="togglePlay(1)">
+                        <svg class="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                    <h4>Prévia 1</h4>
+                    <div class="waveform-placeholder"><span></span><span></span><span></span><span></span><span></span></div>
+                    <span class="bpm-tag">140 BPM</span>
+                </div>
+                <div class="track-card" id="track-2">
+                    <div class="track-play-btn" onclick="togglePlay(2)">
+                        <svg class="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                    <h4>Prévia 2</h4>
+                    <div class="waveform-placeholder"><span></span><span></span><span></span><span></span><span></span></div>
+                    <span class="bpm-tag">128 BPM</span>
+                </div>
+                <div class="track-card" id="track-3">
+                    <div class="track-play-btn" onclick="togglePlay(3)">
+                        <svg class="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                    <h4>Prévia 3</h4>
+                    <div class="waveform-placeholder"><span></span><span></span><span></span><span></span><span></span></div>
+                    <span class="bpm-tag">150 BPM</span>
+                </div>
+                <div class="track-card" id="track-4">
+                    <div class="track-play-btn" onclick="togglePlay(4)">
+                        <svg class="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                    <h4>Prévia 4</h4>
+                    <div class="waveform-placeholder"><span></span><span></span><span></span><span></span><span></span></div>
+                    <span class="bpm-tag">135 BPM</span>
+                </div>
+                <div class="track-card" id="track-5">
+                    <div class="track-play-btn" onclick="togglePlay(5)">
+                        <svg class="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                    <h4>Prévia 5</h4>
+                    <div class="waveform-placeholder"><span></span><span></span><span></span><span></span><span></span></div>
+                    <span class="bpm-tag">160 BPM</span>
+                </div>
+                <div class="track-card" id="track-6">
+                    <div class="track-play-btn" onclick="togglePlay(6)">
+                        <svg class="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                    <h4>Prévia 6</h4>
+                    <div class="waveform-placeholder"><span></span><span></span><span></span><span></span><span></span></div>
+                    <span class="bpm-tag">142 BPM</span>
+                </div>
+                <div class="track-card" id="track-7">
+                    <div class="track-play-btn" onclick="togglePlay(7)">
+                        <svg class="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                    <h4>Prévia 7</h4>
+                    <div class="waveform-placeholder"><span></span><span></span><span></span><span></span><span></span></div>
+                    <span class="bpm-tag">120 BPM</span>
+                </div>
+                <div class="track-card" id="track-8">
+                    <div class="track-play-btn" onclick="togglePlay(8)">
+                        <svg class="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                    <h4>Prévia 8</h4>
+                    <div class="waveform-placeholder"><span></span><span></span><span></span><span></span><span></span></div>
+                    <span class="bpm-tag">145 BPM</span>
+                </div>
+                <div class="track-card" id="track-9">
+                    <div class="track-play-btn" onclick="togglePlay(9)">
+                        <svg class="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                    <h4>Prévia 9</h4>
+                    <div class="waveform-placeholder"><span></span><span></span><span></span><span></span><span></span></div>
+                    <span class="bpm-tag">130 BPM</span>
+                </div>
+            </div>
+            <p class="preview-note">*Prévias demonstrativas com efeito animado.</p>
+        </section>
+
+
+        <!-- #4 OFERTA -->
+        <section id="pricing" class="pricing-card">
+            <span class="offer-badge">Oferta Especial</span>
+            
+            <div class="progress-container">
+                <div class="progress-labels">
+                    <span class="progress-text-left">UNIDADES VENDIDAS — LOTE 1</span>
+                    <span class="progress-text-right">87%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill"></div>
+                </div>
+            </div>
+
+            <p class="old-price">De: R$59,90</p>
+            
+            <div class="price-container">
+                <span class="price-label-left">Por apenas</span>
+                <span class="main-price">R$19,90</span>
+            </div>
+            
+            <p class="price-details">Pagamento único · Acesso vitalício</p>
+
+            <div class="pack-cover-wrapper">
+                <img src="capa-pack.jpg" alt="Capa do 30 Beat Pack" onclick="this.style.display='none'">
+                <div class="cover-placeholder">Sua Capa Aqui<br>(capa-pack.jpg)</div>
+            </div>
+
+            <div class="pricing-features">
+                <div class="p-feature">
+                    <svg class="p-feature-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span>30 beats inclusos</span>
+                </div>
+                <div class="p-feature">
+                    <svg class="p-feature-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span>Download imediato após pagamento</span>
+                </div>
+                <div class="p-feature">
+                    <svg class="p-feature-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span>Arquivos de alta qualidade</span>
+                </div>
+                <div class="p-feature">
+                    <svg class="p-feature-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span>Uso comercial disponível</span>
+                </div>
+                <div class="p-feature">
+                    <svg class="p-feature-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span>Acesso automático e vitalício</span>
+                </div>
+            </div>
+
+            <!-- ÚNICO BOTÃO QUE DIRECIONA PARA O CHECKOUT -->
+            <button class="btn-large-cta" onclick="handleCtaClick()">Comprar Agora</button>
+
+            <div class="pricing-action-links">
+                <a href="#previews" class="btn-secondary-action">Ouvir Beats</a>
+                <a href="#testimonials" class="btn-secondary-action">Avaliações</a>
+            </div>
+
+            <div class="instant-delivery-text">
+                <span>⚡</span> Acesso liberado automaticamente após o pagamento
+            </div>
+        </section>
+
+
+        <!-- #5 O QUE ESTÁ INCLUSO? -->
+        <section class="included-section">
+            <p class="section-subtitle-small">O QUE ESTÁ INCLUSO?</p>
+            <h2 class="section-title">Tudo que você precisa!</h2>
+
+            <!-- 1. Arquivos de alta qualidade -->
+            <div class="feature-item">
+                <div class="feature-icon-wrapper">
+                    <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                </div>
+                <div class="feature-text-group">
+                    <svg class="check-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    <span class="feature-title">Arquivos de alta qualidade</span>
+                </div>
+            </div>
+
+            <!-- 2. Download imediato -->
+            <div class="feature-item">
+                <div class="feature-icon-wrapper">
+                    <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                </div>
+                <div class="feature-text-group">
+                    <svg class="check-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    <span class="feature-title">Download imediato</span>
+                </div>
+            </div>
+
+            <!-- 3. Compatível com qualquer DAW -->
+            <div class="feature-item">
+                <div class="feature-icon-wrapper">
+                    <svg viewBox="0 0 24 24"><path d="M22 9V7h-2V5c0-1.1-.9-2-2-2h-2V1h-2v2h-2V1H10v2H8C6.9 3 6 3.9 6 5v2H4v2H2v2h2v2H2v2h2v2h2v2c0 1.1.9 2 2 2h2v2h2v-2h2v2h2v-2h2c1.1 0 2-.9 2-2v-2h2v-2h2v-2h-2v-2h2zm-4 7H8V8h10v8z"/></svg>
+                </div>
+                <div class="feature-text-group">
+                    <svg class="check-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    <span class="feature-title">Compatível com qualquer DAW</span>
+                </div>
+            </div>
+
+            <!-- 4. Organização profissional -->
+            <div class="feature-item">
+                <div class="feature-icon-wrapper">
+                    <svg viewBox="0 0 24 24"><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>
+                </div>
+                <div class="feature-text-group">
+                    <svg class="check-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    <span class="feature-title">Organização profissional</span>
+                </div>
+            </div>
+
+            <!-- 5. Uso comercial disponível -->
+            <div class="feature-item">
+                <div class="feature-icon-wrapper">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+                </div>
+                <div class="feature-text-group">
+                    <svg class="check-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    <span class="feature-title">Uso comercial disponível</span>
+                </div>
+            </div>
+
+            <div class="warranty-box">
+                <div class="warranty-badge-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+                    </svg>
+                </div>
+                <h3 class="warranty-title">Garantia Total</h3>
+                <p class="warranty-text">Seu acesso será liberado automaticamente após a confirmação do pagamento. Compra 100% segura e protegida.</p>
+            </div>
+        </section>
+
+
+        <!-- #6 FAQ ACCORDION -->
+        <section id="faq" class="faq-section">
+            <p class="section-subtitle-small">DÚVIDAS</p>
+            <h2 class="section-title">Perguntas Frequentes</h2>
+
+            <div class="faq-list">
+                <!-- 1. Como recebo os arquivos? -->
+                <div class="faq-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">
+                        Como recebo os arquivos?
+                        <svg class="faq-icon" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-inner-text">
+                            O envio é 100% automatizado. Assim que o pagamento for confirmado, você recebe um e-mail com as instruções e o link exclusivo para download de todos os arquivos.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Posso usar os beats comercialmente? -->
+                <div class="faq-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">
+                        Posso usar os beats comercialmente?
+                        <svg class="faq-icon" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-inner-text">
+                            Sim! Os beats são 100% livres de royalties. Você pode monetizar seus sons no Spotify, YouTube, Apple Music ou em qualquer outra plataforma sem pagar porcentagem para ninguém.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Os beats possuem boa qualidade? -->
+                <div class="faq-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">
+                        Os beats possuem boa qualidade?
+                        <svg class="faq-icon" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-inner-text">
+                            Com certeza. Todos os arquivos são exportados em altíssima qualidade de estúdio profissional, garantindo clareza total, graves limpos e mixagem no ponto para você apenas gravar a sua voz.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Qual formato dos arquivos? -->
+                <div class="faq-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">
+                        Qual formato dos arquivos?
+                        <svg class="faq-icon" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-inner-text">
+                            Eles estão no formato padrão profissional da indústria musical (WAV/MP3 de alta qualidade), ideais para manter toda a fidelidade sonora e dinâmica das faixas.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Funciona em qualquer DAW? -->
+                <div class="faq-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">
+                        Funciona em qualquer DAW?
+                        <svg class="faq-icon" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-inner-text">
+                            Sim! Por serem arquivos de áudio padrão, você pode arrastar e soltar direto em qualquer software ou aplicativo de gravação, incluindo FL Studio, Ableton Live, Logic Pro, Pro Tools, Reaper e até no celular.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Recebo imediatamente? -->
+                <div class="faq-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">
+                        Recebo imediatamente?
+                        <svg class="faq-icon" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-inner-text">
+                            Sim, o envio é instantâneo via e-mail assim que o pagamento via Pix ou Cartão é aprovado pelo sistema.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        let currentPlayingId = null;
+
+        function togglePlay(trackId) {
+            const allTracks = document.querySelectorAll('.track-card');
+            const clickedTrack = document.getElementById('track-' + trackId);
+            const clickedBtn = clickedTrack.querySelector('.track-play-btn');
+            
+            if (currentPlayingId === trackId) {
+                clickedTrack.classList.remove('active-track');
+                clickedBtn.innerHTML = '<svg class="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+                currentPlayingId = null;
+                return;
+            }
+
+            allTracks.forEach(track => {
+                track.classList.remove('active-track');
+                const btn = track.querySelector('.track-play-btn');
+                btn.innerHTML = '<svg class="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+            });
+
+            clickedTrack.classList.add('active-track');
+            clickedBtn.innerHTML = '<svg viewBox="0 0 24 24" style="width:12px; height:12px; fill:#ffffff;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+            currentPlayingId = trackId;
+        }
+
+        function toggleFaq(button) {
+            const item = button.parentElement;
+            const content = item.querySelector('.faq-content');
+            const isOpen = item.classList.contains('open');
+
+            document.querySelectorAll('.faq-item').forEach(el => {
+                el.classList.remove('open');
+                el.querySelector('.faq-content').style.maxHeight = null;
+            });
+
+            if (!isOpen) {
+                item.classList.add('open');
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        }
+
+        function handleCtaClick() {
+            window.location.href = "https://pague-certo.com/checkout/?u=4rSG2iDSMOsQ8c052CUieTkx3tnuOoAewJrLcvgGykc&product=0b02687c-9bbb-421e-a742-2be449423aa0";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra Confirmada! - 30 BEAT PACK</title>
+    <style>
+        /* ==========================================================================
+           1. ESTILOS BASE & RESET (Alinhado com a Identidade Visual)
+           ========================================================================== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: #06030a;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            min-height: 100vh;
+            background: linear-gradient(180deg, #090412 0%, #06030a 100%);
+            padding: 60px 24px 40px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        /* ==========================================================================
+           2. ÍCONE DE SUCESSO PRINCIPAL
+           ========================================================================== */
+        .success-circle-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(138, 43, 226, 0.1);
+            border: 2px solid #8a2be2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 35px;
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
+        }
+
+        .success-circle-icon svg {
+            width: 36px;
+            height: 36px;
+            fill: #a363ff;
+        }
+
+        /* ==========================================================================
+           3. TÍTULOS DO CABEÇALHO
+           ========================================================================== */
+        .thank-you-title {
+            font-size: 32px;
+            font-weight: 800;
+            text-align: center;
+            line-height: 1.2;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+            background: linear-gradient(180deg, #ffffff 0%, #dedede 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .thank-you-subtitle {
+            font-size: 16px;
+            color: #a363ff;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        /* ==========================================================================
+           4. CARDS DE INFORMAÇÃO E INSTRUÇÕES
+           ========================================================================== */
+        .info-card {
+            width: 100%;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 16px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .card-purple {
+            background: rgba(26, 16, 44, 0.6);
+            border: 1px solid rgba(138, 43, 226, 0.15);
+        }
+
+        .card-amber {
+            background: rgba(36, 23, 17, 0.5);
+            border: 1px solid rgba(212, 143, 56, 0.12);
+        }
+
+        /* Ícones internos dos Cards */
+        .card-icon-wrapper {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .icon-purple-bg {
+            background: rgba(138, 43, 226, 0.2);
+        }
+
+        .icon-purple-bg svg {
+            width: 20px;
+            height: 20px;
+            fill: #a363ff;
+        }
+
+        .icon-amber-bg {
+            background: rgba(212, 143, 56, 0.15);
+        }
+
+        .icon-amber-bg svg {
+            width: 20px;
+            height: 20px;
+            fill: #d48f38;
+        }
+
+        /* Textos internos dos Cards */
+        .card-text-content {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .card-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .card-description {
+            font-size: 13px;
+            color: #a197b4;
+            line-height: 1.5;
+        }
+
+        .highlight-amber {
+            color: #d48f38;
+            font-weight: 600;
+        }
+
+        /* ==========================================================================
+           5. LINK DE RETORNO (RODAPÉ)
+           ========================================================================== */
+        .back-home-wrapper {
+            margin-top: auto;
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        .btn-back-home {
+            font-size: 14px;
+            color: #a197b4;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.2s;
+        }
+
+        .btn-back-home:active {
+            color: #ffffff;
+        }
+
+        .btn-back-home svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Ícone Redondo de Sucesso -->
+        <div class="success-circle-icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+            </svg>
+        </div>
+
+        <!-- Mensagem de Confirmação -->
+        <h1 class="thank-you-title">Compra<br>Confirmada!</h1>
+        <p class="thank-you-subtitle">Obrigado pela sua confiança.</p>
+
+        <!-- Bloco 1: Instruções de E-mail -->
+        <div class="info-card card-purple">
+            <div class="card-icon-wrapper icon-purple-bg">
+                <svg viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+            </div>
+            <div class="card-text-content">
+                <h2 class="card-title">Verifique seu e-mail</h2>
+                <p class="card-description">Enviamos o link de acesso ao seu Beat Pack para o <br>e-mail cadastrado. Clique no link para realizar o download imediatamente.</p>
+            </div>
+        </div>
+
+        <!-- Bloco 2: Alerta de Lixo Eletrônico/Spam -->
+        <div class="info-card card-amber">
+            <div class="card-icon-wrapper icon-amber-bg">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                </svg>
+            </div>
+            <div class="card-text-content">
+                <h2 class="card-title">Não encontrou o e-mail?</h2>
+                <p class="card-description">Confira sua <span class="highlight-amber">caixa de spam</span> ou lixo eletrônico. Às vezes os provedores de e-mail redirecionam mensagens automáticas para lá.</p>
+            </div>
+        </div>
+
+        <!-- Link Voltar com Ícone de Nota Musical -->
+        <div class="back-home-wrapper">
+            <a href="index.html" class="btn-back-home">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                </svg>
+                Voltar para a página inicial
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
